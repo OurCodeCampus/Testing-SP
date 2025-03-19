@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: #141414;
+}
+
+html{
+    font-size: 62.5%;
+}
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text{
+    font-size: 7rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    animation: size-increase 4s linear infinite alternate-reverse;
+    -webkit-animation: size-increase 4s linear infinite alternate-reverse;
+}
+
+@keyframes size-increase {
+    0%{
+        font-size: 7rem;
+        color: #fff;
+    }
+    25%{
+        font-size: 9rem;
+        color: yellow;
+    }
+    50%{
+        font-size: 5rem;
+        color: green;
+    }
+    75%{
+        font-size: 8rem;
+        color: rgb(0, 183, 255);
+    }
+    100%{
+        font-size: 10rem;
+        color: #ff00cc;
+    }
+}
